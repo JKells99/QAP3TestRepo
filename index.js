@@ -9,15 +9,13 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true, })); // This is important!
 app.use(methodOverride('_method')); // So is this!
 
-// app.get('/', (req, res) => {
-//     res.render('index.ejs', { name: 'Cassian Andor'});
-// });
-// app.get('/about', (request, response) => {
-//     response.render('about.ejs');
-// });
+app.get('/', (req, res) => {
+    res.render('movies.ejs');
+});
 
-// const actorsRouter = require('./routes/actors')
-// app.use('/actors', actorsRouter);
+
+const moviesRouter = require('./routes/movies')
+app.use('/movies', moviesRouter);
 
 // const loginsRouter = require('./routes/logins')
 // app.use('/logins', loginsRouter);
