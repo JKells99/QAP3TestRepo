@@ -1,0 +1,26 @@
+{
+  "name": "qap3testrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKells99/QAP3TestRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKells99/QAP3TestRepo/issues"
+  },
+  "homepage": "https://github.com/JKells99/QAP3TestRepo#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "method-override": "^3.0.0",
+    "pg": "^8.11.3"
+  }
+}
